@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  back-end:
+    build: ./back-end
+    ports:
+      - "5252:5252"
+    container_name: softy-pinko-back-end
+
+  front-end:
+    build: ./front-end
+    ports:
+      - "9000:9000"
+    container_name: softy-pinko-front-end
